@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ****************************navbar start **************************/
+
+.navbar-bg .navbar-brand{
+    color: rgb(22, 22, 160);
+    font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-bg ul li {
+    padding : 0 20px ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-bg ul li {
+    font-size: 20px;
+    font-weight: 700;
+    color: aqua;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-bg ul li:hover{
+    color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ****************************navbar end **************************/
+/* **************************** header portion start **************************/
+
+.main-header{
+    width: 100%;
+    height:90vh;
+    padding: 10px;
 }
+
+.header-left-side{
+    align-items: center;
+    place-items: center;
+    margin-top: 140px;
+}
+
+.header-left-side .heading-1{
+    font-size: 40px;
+
+}
+
+.header-left-side .heading-2{
+    font-size: 25px;
+    
+}
+
+.header-left-side .name{
+    color: rgb(29, 156, 199);
+}
+
+.button{
+    margin-top: 30px;
+}
+
+.header-left-side .get-started{
+    margin-top: 30px;
+    background-color: rgb(40, 40, 146);
+    border-radius: 50px;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-right-side{
+    margin-top: 80px;
+    
+}
+
+.header-right-side .image{
+    margin-left: 70px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.header-right-side img{
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* **************************** header portion end **************************/
+/* **************************** service portion start **************************/
+
+.card{
+    width: 80%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.main-service-section{
+    padding-bottom: 50px;
+    margin-top: -10%;
+}
+
+/* **************************** service portion end **************************/
+/* **************************** contact portion start **************************/
+
+.main-contact-portion .heading-1{
+    padding-top: 50px;
+}
+.sub-contact-portion{
+    padding-bottom: 100px;
+}
+
+/* **************************** contact portion end **************************/
+/* **************************** media query start **************************/
+
+@media(max-width : 1400px){
+    
+    .container,
+    .container-md,
+    .container-sm,
+    .container-lg,
+    .container-xl,
+    .container-xxl{
+        max-width: 1400px;
+    }
+
+    @media(max-width : 998px){
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar-bg{
+            width: 95%;
+        }
+
+        .header-right-side .img{
+            margin-top: -20%;
+            margin-left: -10%;
+        }
+
+        .header-left-side{
+            align-items: center;
+            margin-left: 40px ;
+            margin-bottom: 30px;
+            margin-top: 90px;
+        }
+
+        .main-heading{
+            width: 100%;
+        }
+
+        .main-service-section{
+            width: 100%;
+        }
+
+        .main-heading .heading-1{
+            font-size: 35px;
+            padding-bottom: 20px;
+        }
+
+        .main-contact-portion .heading-1{
+            font-size: 35px;
+            padding-bottom: 0px;
+        }
+
+        .sub-contact-portion{
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
+            margin-top: 20px;
+        }
+
+        .footer{
+            width: 100%;
+        }
+        
+    }
+}
+
+/* **************************** media query end **************************/
+
+
+
+
